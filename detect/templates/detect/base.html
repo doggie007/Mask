@@ -1,11 +1,12 @@
 {% load static %}
+{% load custom_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Website</title>
+    <title>masked.ai</title>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     {% block extrahead %}
     
@@ -19,16 +20,16 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="{% url 'index' %}">Home</a></li>
-                    <li><a href="{% url 'about' %}">More About the Project</a></li>
-                    <li><a href="#">Try it now</a></li>
+                    <li><a href="{% anchor 'about' 'first' %}">More About the Project</a></li>
+                    <li><a href="{% anchor 'test' 'first'%}">Try it now</a></li>
                 </ul>
             </div>
         </nav>
         <div class="text-box">
-            <h1>World's best AI for mask detection</h1>
+            <h1>World's coolest prototype AI for mask detection</h1>
         </div>
         <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sint.</p>
+            <p>Made by James Tcheng for the Hack the Cloud 2.0 Hackathon.</p>
         </div>
     </section>
     
@@ -36,4 +37,5 @@
     {% endblock content %}
 
 </body>
+
 </html>

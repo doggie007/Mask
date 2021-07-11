@@ -10,7 +10,7 @@
 {% block content %}
 
 
-<section class="center-section">
+<section id="first" class="center-section">
     <div class="container">
         <div class="left"></div>
         <div class="right">
@@ -27,8 +27,8 @@
         
         <div class="left-1">
             <div class="content">
-            <h1>What did you use and what does it do?</h1>
-            <p>The website you're looking at is built with Django, and the machine learning part is done with Keras, whilst I used OpenCV in order to get a live video feed and detect the faces. <br> <br>There were several challenges with training the model since I used a relatively small <a href="https://www.kaggle.com/vijaykumar1799/face-mask-detection" target="_blank">kaggle dataset</a>: I wanted it to predict whether a person is wearing a mask, not wearing a mask, or wearing a mask incorrectly, but it fails at the latter since it is too hard to differentiate.<br><br></p>
+            <h1>What does it do and what does it use?</h1>
+            <p>I wanted it to predict via a livestream with the camera whether a person is wearing a mask, not wearing a mask, or wearing a mask incorrectly. However it fails at the latter since it is too hard to differentiate. The website you're looking at is built with Django, and the machine learning part is done with Keras, whilst I used OpenCV in order to get a live video feed and detect the faces. <br> <br>I hit several challenges with training the model since I used a relatively small <a href="https://www.kaggle.com/vijaykumar1799/face-mask-detection" target="_blank">kaggle dataset</a>. <br> <br> There is much room for improvement in the future especially with the AI part. <br><br></p>
             </div>
         </div>
         <div class="right-1"></div>

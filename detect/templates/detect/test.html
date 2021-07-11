@@ -1,6 +1,14 @@
 {% extends 'detect/base.html' %}
 {% load static %}
 
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+{% endblock extrahead %}
+
 {% block content %}
-<h1>Try it out page</h1>
+<section id="first">
+    <img class="d1" src="{% url 'videostream' stream_path="video" %}" alt="">
+    <a class="return" href="{% url 'index' %}">End livestream & Return to Homepage</a>
+</section>
+
 {% endblock content %}
