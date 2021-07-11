@@ -1,6 +1,37 @@
 {% extends 'detect/base.html' %}
 {% load static %}
 
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock extrahead %}
+
+
+
 {% block content %}
-<h1>About Page</h1>
+
+
+<section class="center-section">
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <div class="content">
+            <h1>Why Did I choose this project?</h1>
+            <p>The presence of COVID-19 is still felt by everyone of us, meaning we must continue to fight against the virus to prevent further loss of lives. <br><br> Masks continue to play a vital role in protecting people, being <a href="https://www.pnas.org/content/118/4/e2014564118" target="_blank">79% effective in preventing transmission</a>.<br><br>A mask detector application can be used in crowded areas or in public services to promote the wearing of face masks and thus reduce COVID transmission, detailed <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1641/1/012063/pdf" target="_blank">in this research paper</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="center-section">
+    <div class="container">
+        
+        <div class="left-1">
+            <div class="content">
+            <h1>What did you use and what does it do?</h1>
+            <p>The website you're looking at is built with Django, and the machine learning part is done with Keras, whilst I used OpenCV in order to get a live video feed and detect the faces. <br> <br>There were several challenges with training the model since I used a relatively small <a href="https://www.kaggle.com/vijaykumar1799/face-mask-detection" target="_blank">kaggle dataset</a>: I wanted it to predict whether a person is wearing a mask, not wearing a mask, or wearing a mask incorrectly, but it fails at the latter since it is too hard to differentiate.<br><br></p>
+            </div>
+        </div>
+        <div class="right-1"></div>
+    </div>
+</section>
 {% endblock content %}
