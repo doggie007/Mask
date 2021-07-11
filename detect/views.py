@@ -1,16 +1,13 @@
-from django.http.response import HttpResponseServerError, StreamingHttpResponse
+from django.http.response import StreamingHttpResponse
 from django.shortcuts import render
 import cv2
-import threading
 from django.views.decorators import gzip
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from keras.models import load_model
-from imutils.video import VideoStream
 import numpy as np
 import cv2
 from pathlib import Path
-import time
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 

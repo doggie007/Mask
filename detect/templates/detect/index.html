@@ -1,6 +1,30 @@
 {% extends 'detect/base.html' %}
+{% load static %}
+{% load custom_tags %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
 
+{% endblock extrahead %}
 {% block content %}
-<h1>Index View</h1>
+
+<section id="first" class="center-section">
+    <div class="container">
+        <div class="right">
+            <div class="content">
+                <h1>Welcome! Thanks for being here!</h1>
+                <strong>mask.ai</strong> offers AI-enabled intelligent mask detection by simply utilising the camera on your laptop to draw bounding boxes around faces in real time: <br><br>
+                <span class="blue">BLUE</span> to show the person is wearing the mask correctly; <br>
+                <span class="red">RED</span> to show the person is not wearing a mask; <br>
+                <span class="orange">ORANGE</span> to show the person is wearing the mask incorrectly.
+                </p>
+                <br>
+                <small>PS: works best on full-screen laptop and be patient with the loading time</small>
+                <br>
+                <a id="left-box" href="{% anchor 'about' 'first'%}">Learn More</a>
+                <a id="right-box" href="{% anchor 'test' 'first'%}">Try now!</a>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock content %}
 

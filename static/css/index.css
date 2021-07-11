@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Zen+Tokyo+Zoo&display=swap");
+
+#first {
+	width: 100vw;
+	height: 100vh;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	position: relative;
+}
+.center-section {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(rgba(8, 6, 32, 0.75), rgba(8, 6, 32, 0.75)),
+		url(../images/desktop.jpg) center/cover no-repeat;
+}
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.6;
+	font-size: 24px;
+}
+
+.right {
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-family: "Poppins", sans-serif;
+}
+
+span {
+	font-weight: bolder;
+}
+.blue {
+	color: rgb(6, 6, 255);
+}
+.red {
+	color: red;
+}
+.orange {
+	color: orange;
+}
+
+.content h1 {
+	font-weight: lighter;
+	font-size: 60px;
+	padding-bottom: 10px;
+}
+.content p {
+	font-size: larger;
+}
+.content a {
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: white;
+	color: black;
+	padding: 20px 30px;
+	display: inline-block;
+	letter-spacing: 2px;
+	margin-top: auto;
+}
+
+#left-box {
+	margin: 20px 20px;
+}
+
+#right-box {
+	margin: 20px 0 0 20px;
+}
