@@ -10,9 +10,11 @@
 {% block content %}
 
 
-<section id="first" class="center-section">
+<section id="first" class="center-section" style="background: linear-gradient(rgba(8, 6, 32, 0), rgba(8, 6, 32, 0)),
+		url( {% static 'images/silk-background.jpg'%}) center/cover no-repeat fixed;">
     <div class="container">
-        <div class="left"></div>
+        <div class="left" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url({% static 'images/hand.jpg'%}) center/cover no-repeat;"></div>
         <div class="right">
             <div class="content">
             <h1>Why Did I choose this project?</h1>
@@ -22,7 +24,8 @@
     </div>
 </section>
 
-<section class="center-section">
+<section class="center-section" style="background: linear-gradient(rgba(8, 6, 32, 0), rgba(8, 6, 32, 0)),
+		url( {% static 'images/silk-background.jpg'%}) center/cover no-repeat fixed;">>
     <div class="container">
         
         <div class="left-1">
@@ -31,7 +34,8 @@
             <p>I wanted it to predict via a livestream with the camera whether a person is wearing a mask, not wearing a mask, or wearing a mask incorrectly. However it does not work well (unless it is very clear) at differentiating between a person wearing mask and wearing mask incorrectly since I used a relatively small <a href="https://www.kaggle.com/vijaykumar1799/face-mask-detection" target="_blank">kaggle dataset</a>. <br> <br> The website you're looking at is built with Django, and the machine learning part is done with Keras, whilst I used OpenCV in order to get a live video feed and detect the faces. <br> <br> There is much room for improvement in the future especially with the AI in terms of speed and accuracy. <br><br></p>
             </div>
         </div>
-        <div class="right-1"></div>
+        <div class="right-1" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url({% static 'images/man-mask.jpg' %}) center/cover no-repeat;"></div>
     </div>
 </section>
 {% endblock content %}

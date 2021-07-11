@@ -13,7 +13,8 @@
     {% endblock extrahead %}
 </head>
 <body>
-    <section class="header">
+    <section style="background: linear-gradient(rgba(8, 6, 32, 0.7), rgba(8, 6, 32, 0.7)),
+		url({% static 'images/header_background.jpg'%}) center/cover no-repeat fixed;" class="header">
         <nav>
             <a  href="{% url 'index' %}"><img class="logo" src="{% static 'images/logo3.jpg' %}" alt="Logo"></a>
             <h1 id="name">masked.ai</h1>
